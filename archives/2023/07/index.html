@@ -1,24 +1,165 @@
-extends base
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>archive_a: 2023/7 | 飞飞哥&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="飞飞哥&#39;s Blog">
+<meta property="og:url" content="https://feifeige21.github.io/archives/2023/07/index.html">
+<meta property="og:site_name" content="飞飞哥&#39;s Blog">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="飞飞哥">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="飞飞哥&#39;s Blog" type="application/atom+xml">
+  
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0.css">
 
-block title
-  if page.category
-     title= page.category + ' | ' + config.title
-  if page.tag
-     title= page.tag + ' | ' + config.title
-  if page.archive
-     title= __('archive') + ' | ' + config.title
-block content
-  if page.category || page.tag
-      h1.label-title=  __('reading_label', page.category || page.tag)
-  .post
-    .post-archive
-        - var allposts = page.posts.toArray().reduce((r, v, i, a, k = -v.date.format('YYYY')) => ((r[k] || (r[k] = [])).push(v), r), {})
-        each posts, year in allposts
-          h2= -year
-          ul.listing
-            for post in posts
-              li
-                span.date= post.date.format(config.date_format)
-                a(href=url_for(post.path), title=post.title)
-                  +title(post)
-  include _partial/paginator.pug
+  
+<link rel="stylesheet" href="/lib/fancybox/dist/jquery.fancybox.min.css">
+
+  
+<link rel="stylesheet" href="/css/main.css">
+
+  
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+
+  
+  
+  
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+  <div id="wrapper">
+    <header id="header" class="clearfix">
+	<a id="logo" href="/" title="飞飞哥&#39;s Blog">飞飞哥&#39;s Blog</a>
+	
+	<nav id="nav-menu" class="clearfix">
+		<form id="search" method="post" action="./" role="search">
+			<input id="search-input" type="text" name="s" class="inputbox" value="Search" onfocus="if (value =='Search'){value =''}" onblur="if (value ==''){value='Search'}">
+		</form>
+		<ul>
+      
+				
+        <li><a class="main-nav-link" href="/">Home</a></li>
+      
+				
+        <li><a class="main-nav-link" href="/archives">Archives</a></li>
+      
+		</ul>
+	</nav>
+</header>
+    <section id="main" class="clearfix">  
+
+  
+    <article class="post-detail">
+      <div id="archives">
+        <h3 class="al_year">2024</h3>
+        
+          <ul class="al_mon_list">
+            <li clsss="li_mon"><span class="al_mon">6</span>
+                <ul class="al_post_list">
+                  
+                    <li><a href="/2024/07/23/我的脉搏仍然无法平息/">我的脉搏仍然无法平息</a></li>
+                  
+                    <li><a href="/2024/07/20/当你的海，就不会在意你没有岸/">当你的海，就不会在意你没有岸</a></li>
+                  
+                </ul>
+            </li>
+          </ul>
+        
+      </div>
+    </article>
+  
+    <article class="post-detail">
+      <div id="archives">
+        <h3 class="al_year">2023</h3>
+        
+          <ul class="al_mon_list">
+            <li clsss="li_mon"><span class="al_mon">6</span>
+                <ul class="al_post_list">
+                  
+                    <li><a href="/2023/07/22/灵感/">灵感</a></li>
+                  
+                </ul>
+            </li>
+          </ul>
+        
+      </div>
+    </article>
+  
+    <article class="post-detail">
+      <div id="archives">
+        <h3 class="al_year">2022</h3>
+        
+          <ul class="al_mon_list">
+            <li clsss="li_mon"><span class="al_mon">4</span>
+                <ul class="al_post_list">
+                  
+                    <li><a href="/2022/05/08/我的春衫，我的悲伤/">我的春衫，我的悲伤（2015）</a></li>
+                  
+                </ul>
+            </li>
+          </ul>
+        
+      </div>
+    </article>
+  
+    <article class="post-detail">
+      <div id="archives">
+        <h3 class="al_year">2021</h3>
+        
+          <ul class="al_mon_list">
+            <li clsss="li_mon"><span class="al_mon">11</span>
+                <ul class="al_post_list">
+                  
+                    <li><a href="/2021/12/06/望京的月光/">望京的月光</a></li>
+                  
+                    <li><a href="/2021/12/04/也许你的心中早已不再有波澜/">也许你的心中早已不再有波澜</a></li>
+                  
+                    <li><a href="/2021/12/03/Niemand außer uns/">Niemand außer uns</a></li>
+                  
+                </ul>
+            </li>
+          </ul>
+        
+          <ul class="al_mon_list">
+            <li clsss="li_mon"><span class="al_mon">4</span>
+                <ul class="al_post_list">
+                  
+                    <li><a href="/2021/05/15/这是一篇测试文章/">这是一篇测试文章</a></li>
+                  
+                </ul>
+            </li>
+          </ul>
+        
+      </div>
+    </article>
+  
+  </section>
+    <footer id="footer" role="contentinfo">
+    <div>&copy; 2024 <a href="/">飞飞哥&#39;s Blog</a>.
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Designed by <a href="http://rainylog.com" target="_blank">Rainy.</a>
+	</div>
+</footer><!-- end #footer -->
+
+  </div>
+  
+<script src="/lib/fancybox/dist/jquery.fancybox.min.js"></script>
+
+
+  
+<script src="/js/helper.js"></script>
+
+  
+<script src="/js/_third-party/gitment.js"></script>
+
+</body>
+</html>
