@@ -1,141 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <head>
+    <meta charset="utf-8">
 
-    <meta name="author" content="飞飞哥">
-
-
-
-
-
-<title>Archives | 飞飞哥&#39;s Blog</title>
-
-
-
-    <link rel="icon" href="/image/favicon.ico">
-
-
-
-
-    <!-- stylesheets list from _config.yml -->
-    
-    <link rel="stylesheet" href="/css/style.css">
     
 
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-
-    <!-- scripts list from _config.yml -->
-    
-    <script src="/js/script.js"></script>
-    
-    <script src="/js/tocbot.min.js"></script>
-    
-
-
+    <!--icon-->
 
     
     
-        
+    
+    
     
 
+
+    <!-- meta -->
+
+
+<title>Archive | 飞飞哥&#39;s Blog</title>
+
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta property="og:type" content="website">
+<meta property="og:title" content="飞飞哥&#39;s Blog">
+<meta property="og:url" content="https://feifeige21.github.io/archives/page/2/index.html">
+<meta property="og:site_name" content="飞飞哥&#39;s Blog">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="飞飞哥">
+<meta name="twitter:card" content="summary_large_image">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+    
+
+    
+
+     
+
+    <!-- custom head -->
 
 <meta name="generator" content="Hexo 5.4.0"></head>
-<body>
-    <div class="wrapper">
-        <header>
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-header header-logo"><a href="/">飞飞哥&#39;s Blog</a></div>
-            <div class="menu navbar-right">
-                
-                    <a class="menu-item" href="/archives">Posts</a>
-                
-                    <a class="menu-item" href="/tag">Tags</a>
-                
-                    <a class="menu-item" href="/about">About</a>
-                
-                <input id="switch_default" type="checkbox" class="switch_default">
-                <label for="switch_default" class="toggleBtn"></label>
-            </div>
-        </div>
-    </nav>
 
-    
-    <nav class="navbar-mobile" id="nav-mobile">
-        <div class="container">
-            <div class="navbar-header">
-                <div>
-                    <a href="/">飞飞哥&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
-                </div>
-                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
-            </div>
-            <div class="menu" id="mobile-menu">
-                
-                    <a class="menu-item" href="/archives">Posts</a>
-                
-                    <a class="menu-item" href="/tag">Tags</a>
-                
-                    <a class="menu-item" href="/about">About</a>
-                
-            </div>
-        </div>
-    </nav>
-
-</header>
-<script>
-    var mobileBtn = function f() {
-        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
-        var mobileMenu = document.getElementById("mobile-menu");
-        if(toggleMenu.classList.contains("active")){
-           toggleMenu.classList.remove("active")
-            mobileMenu.classList.remove("active")
-        }else{
-            toggleMenu.classList.add("active")
-            mobileMenu.classList.add("active")
-        }
-    }
-</script>
-        <div class="main">
-            <div class="post-wrap archive">
-    
-    
-        
-
-        
-            <h3>2021</h3>
-        
-
-        <article class="archive-item">
-            <a class="archive-item-link" href="/2021/12/03/test02/">Niemand außer uns</a>
-            <span class="archive-item-date">December 3, 2021</span>
-        </article>
-    
-        
-
-        
-
-        <article class="archive-item">
-            <a class="archive-item-link" href="/2021/05/15/test01/">这是一篇测试文章</a>
-            <span class="archive-item-date">May 15, 2021</span>
-        </article>
-    
-    
-    <nav class="pagination">
-        <a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
-    </nav>
-
-</div>
-        </div>
-        <footer id="footer" class="footer">
-    <div class="copyright">
-        <span>© 飞飞哥 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    <body>
+        <div id="app" tabindex="-1">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">Demo</span>
+        </a>
     </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/archives/" class="navbar-menu button">归档</a>
+                
+                    <a href="/friends/" class="navbar-menu button">友链</a>
+                
+                    <a href="/page/" class="navbar-menu button">Page</a>
+                
+            </div>
+        
+        
+        
+
+        
+        
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/archives/" class="dropdown-menu button">归档</a>
+                
+                    <a href="/friends/" class="dropdown-menu button">友链</a>
+                
+                    <a href="/page/" class="dropdown-menu button">Page</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+    <div class="cover">
+        <div class="cover__logo">
+            
+                <h1>Demo</h1>
+            
+        </div>
+        
+        
+            <div class="cover__intro">
+                <p>Hi, nice to meet you!</p>
+ 
+            </div>
+        
+    </div>
+
+            
+<main class='main'>
+    
+        <div class="archives">
+            
+                    <div class="archives-item">
+                        <div class="archives-left">
+                            <div class="archives-icon icon-lg"></div>
+                        </div>
+                        <div class="archives-content">
+                            <h3 class="archives-year">2024</h3>
+                        </div>
+                    </div>
+                
+                <div class="archives-item">
+                    <div class="archives-left">
+                        <div class="archives-icon">
+
+                        </div>
+                    </div>
+                    <span class="archives-content">
+                        09-12
+                        &nbsp;
+                        <a href="/2024/09/12/shawn/">
+                            <span class="archives-title">
+                                
+                                    Shawn
+                                
+                            </span>
+                        </a>
+                        <br><br>
+                    </span>
+                </div>
+            
+                <div class="archives-item">
+                    <div class="archives-left">
+                        <div class="archives-icon">
+
+                        </div>
+                    </div>
+                    <span class="archives-content">
+                        08-24
+                        &nbsp;
+                        <a href="/2024/08/24/moments/">
+                            <span class="archives-title">
+                                
+                                    告别是为延续回忆永恒的华丽
+                                
+                            </span>
+                        </a>
+                        <br><br>
+                    </span>
+                </div>
+            
+                <div class="archives-item">
+                    <div class="archives-left">
+                        <div class="archives-icon">
+
+                        </div>
+                    </div>
+                    <span class="archives-content">
+                        08-20
+                        &nbsp;
+                        <a href="/2024/08/20/road/">
+                            <span class="archives-title">
+                                
+                                    路与深渊
+                                
+                            </span>
+                        </a>
+                        <br><br>
+                    </span>
+                </div>
+            
+                <div class="archives-item">
+                    <div class="archives-left">
+                        <div class="archives-icon">
+
+                        </div>
+                    </div>
+                    <span class="archives-content">
+                        07-31
+                        &nbsp;
+                        <a href="/2024/07/31/Dearyou/">
+                            <span class="archives-title">
+                                
+                                    你在我存在的废墟中缓缓降落
+                                
+                            </span>
+                        </a>
+                        <br><br>
+                    </span>
+                </div>
+            
+                <div class="archives-item">
+                    <div class="archives-left">
+                        <div class="archives-icon">
+
+                        </div>
+                    </div>
+                    <span class="archives-content">
+                        07-23
+                        &nbsp;
+                        <a href="/2024/07/23/pulse/">
+                            <span class="archives-title">
+                                
+                                    我的脉搏仍然无法平息
+                                
+                            </span>
+                        </a>
+                        <br><br>
+                    </span>
+                </div>
+            
+                <div class="archives-item">
+                    <div class="archives-left">
+                        <div class="archives-icon">
+
+                        </div>
+                    </div>
+                    <span class="archives-content">
+                        07-20
+                        &nbsp;
+                        <a href="/2024/07/20/seaandshore/">
+                            <span class="archives-title">
+                                
+                                    当你的海，就不会在意你没有岸
+                                
+                            </span>
+                        </a>
+                        <br><br>
+                    </span>
+                </div>
+            
+                    <div class="archives-item">
+                        <div class="archives-left">
+                            <div class="archives-icon icon-lg"></div>
+                        </div>
+                        <div class="archives-content">
+                            <h3 class="archives-year">2023</h3>
+                        </div>
+                    </div>
+                
+                <div class="archives-item">
+                    <div class="archives-left">
+                        <div class="archives-icon">
+
+                        </div>
+                    </div>
+                    <span class="archives-content">
+                        07-22
+                        &nbsp;
+                        <a href="/2023/07/22/inspiration/">
+                            <span class="archives-title">
+                                
+                                    灵感
+                                
+                            </span>
+                        </a>
+                        <br><br>
+                    </span>
+                </div>
+            
+                    <div class="archives-item">
+                        <div class="archives-left">
+                            <div class="archives-icon icon-lg"></div>
+                        </div>
+                        <div class="archives-content">
+                            <h3 class="archives-year">2022</h3>
+                        </div>
+                    </div>
+                
+                <div class="archives-item">
+                    <div class="archives-left">
+                        <div class="archives-icon">
+
+                        </div>
+                    </div>
+                    <span class="archives-content">
+                        05-18
+                        &nbsp;
+                        <a href="/2022/05/18/wyc/">
+                            <span class="archives-title">
+                                
+                                    我的春衫，我的悲伤（2015）
+                                
+                            </span>
+                        </a>
+                        <br><br>
+                    </span>
+                </div>
+            
+                    <div class="archives-item">
+                        <div class="archives-left">
+                            <div class="archives-icon icon-lg"></div>
+                        </div>
+                        <div class="archives-content">
+                            <h3 class="archives-year">2021</h3>
+                        </div>
+                    </div>
+                
+                <div class="archives-item">
+                    <div class="archives-left">
+                        <div class="archives-icon">
+
+                        </div>
+                    </div>
+                    <span class="archives-content">
+                        12-06
+                        &nbsp;
+                        <a href="/2021/12/06/Wangjingdeyueguang/">
+                            <span class="archives-title">
+                                
+                                    望京的月光
+                                
+                            </span>
+                        </a>
+                        <br><br>
+                    </span>
+                </div>
+            
+                <div class="archives-item">
+                    <div class="archives-left">
+                        <div class="archives-icon">
+
+                        </div>
+                    </div>
+                    <span class="archives-content">
+                        12-04
+                        &nbsp;
+                        <a href="/2021/12/04/calmness/">
+                            <span class="archives-title">
+                                
+                                    也许你的心中早已不再有波澜
+                                
+                            </span>
+                        </a>
+                        <br><br>
+                    </span>
+                </div>
+            
+                <div class="archives-item">
+                    <div class="archives-left">
+                        <div class="archives-icon">
+
+                        </div>
+                    </div>
+                    <span class="archives-content">
+                        12-03
+                        &nbsp;
+                        <a href="/2021/12/03/test02/">
+                            <span class="archives-title">
+                                
+                                    Niemand außer uns
+                                
+                            </span>
+                        </a>
+                        <br><br>
+                    </span>
+                </div>
+            
+                <div class="archives-item">
+                    <div class="archives-left">
+                        <div class="archives-icon">
+
+                        </div>
+                    </div>
+                    <span class="archives-content">
+                        05-15
+                        &nbsp;
+                        <a href="/2021/05/15/test01/">
+                            <span class="archives-title">
+                                
+                                    这是一篇测试文章
+                                
+                            </span>
+                        </a>
+                        <br><br>
+                    </span>
+                </div>
+            
+        </div>
+    
+</main>
+
+            <footer class="footer">
+    
+    
+
+
+    
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2024 <a href="/">飞飞哥&#39;s Blog</a>
+        </p>
+    
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
 </footer>
 
-    </div>
-</body>
+        </div>
+         
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+    </body>
 </html>
