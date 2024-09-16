@@ -1,223 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    
-
-    <!-- 渲染优化 -->
-    <meta name="renderer" content="webkit">
-    <meta name="force-rendering" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta name="HandheldFriendly" content="True" >
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!--icon-->
-
-    
-    
-    
-    
-    
+    <meta name="author" content="飞飞哥">
 
 
-    <!-- meta -->
+
 
 
 <title>关于我 | 飞飞哥&#39;s Blog</title>
 
 
 
+    <link rel="icon" href="/image/favicon.ico">
 
 
-    <!-- OpenGraph -->
- 
-    <meta name="description" content="自言自语&#x2F;自娱自乐&#x2F;自逮&#x2F;自我意识的&#x2F;飞飞哥 这里是我的个人博客。 我喜欢文字被掌控在自己手里，偶尔记录自己的心情，以便老了之后帮助我回忆那些人和事。 这里面部分文章同步发布于微信公众号（异同体），但是比那里的内容更加完整和准确。 如果你对我的记录感兴趣，可以联系我：&amp;#x34;&amp;#x31;&amp;#49;&amp;#51;&amp;#x38;&amp;#x31;&amp;#x33;&amp;#53;&amp;#53;&amp;#x40;&amp;#x71;&amp;#11">
-<meta property="og:type" content="website">
-<meta property="og:title" content="关于我">
-<meta property="og:url" content="https://feifeige21.github.io/about/index.html">
-<meta property="og:site_name" content="飞飞哥&#39;s Blog">
-<meta property="og:description" content="自言自语&#x2F;自娱自乐&#x2F;自逮&#x2F;自我意识的&#x2F;飞飞哥 这里是我的个人博客。 我喜欢文字被掌控在自己手里，偶尔记录自己的心情，以便老了之后帮助我回忆那些人和事。 这里面部分文章同步发布于微信公众号（异同体），但是比那里的内容更加完整和准确。 如果你对我的记录感兴趣，可以联系我：&amp;#x34;&amp;#x31;&amp;#49;&amp;#51;&amp;#x38;&amp;#x31;&amp;#x33;&amp;#53;&amp;#53;&amp;#x40;&amp;#x71;&amp;#11">
-<meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-09-15T03:22:00.000Z">
-<meta property="article:modified_time" content="2024-09-15T15:09:35.714Z">
-<meta property="article:author" content="飞飞哥">
-<meta name="twitter:card" content="summary_large_image">
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
 
 
     
-<link rel="stylesheet" href="/css/style/main.css">
- 
-
     
-    
-        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/highlight.css" media="none" onload="this.media='all'">
         
     
 
-    
-    
-
-    
-
-     
-
-    <!-- custom head -->
 
 <meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">飞飞哥&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Archives</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
 
-    <body>
-        <div id="app" tabindex="-1">
-            <header class="header">
-    <div class="header__left">
-        <a href="/" class="button">
-            <span class="logo__text">Demo</span>
-        </a>
-    </div>
-    <div class="header__right">
-        
-            <div class="navbar__menus">
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">飞飞哥&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
                 
-                    <a href="/" class="navbar-menu button">首页</a>
+                    <a class="menu-item" href="/archives">Archives</a>
                 
-                    <a href="/tags/" class="navbar-menu button">标签</a>
+                    <a class="menu-item" href="/tag">Tags</a>
                 
-                    <a href="/archives/" class="navbar-menu button">归档</a>
-                
-                    <a href="/friends/" class="navbar-menu button">友链</a>
-                
-                    <a href="/page/" class="navbar-menu button">Page</a>
+                    <a class="menu-item" href="/about">About</a>
                 
             </div>
-        
-        
-        
+        </div>
+    </nav>
 
-        
-        
-
-        
-            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
-            <div class="dropdown-menus" id="dropdown-menus">
-                
-                    <a href="/" class="dropdown-menu button">首页</a>
-                
-                    <a href="/tags/" class="dropdown-menu button">标签</a>
-                
-                    <a href="/archives/" class="dropdown-menu button">归档</a>
-                
-                    <a href="/friends/" class="dropdown-menu button">友链</a>
-                
-                    <a href="/page/" class="dropdown-menu button">Page</a>
-                
-            </div>
-        
-    </div>
 </header>
-
-
-            <main class="main">
-    
-
-<div class="post-title">
-    <h1 class="post-title__text">
-        关于我
-    </h1>
-    <div class="post-title__meta">
-        <a href="/archives/2024/09/" class="post-meta__date button">2024-09-15</a>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    <article class="post-wrap page">
         
- 
+        <h2 class="post-title">关于我</h2>
         
-    
-    
-
-
- 
-
- 
-    </div>
-</div>
-
-
-
-<article class="post content-card">
-    <div class="post__header"></div>
-    <div class="post__content">
-        <p>自言自语/自娱自乐/自逮/自我意识的/飞飞哥</p>
+        <section class="post-content">
+            <p>自言自语/自娱自乐/自逮/自我意识的/飞飞哥</p>
 <p>这里是我的个人博客。</p>
 <p>我喜欢文字被掌控在自己手里，偶尔记录自己的心情，以便老了之后帮助我回忆那些人和事。</p>
 <p>这里面部分文章同步发布于微信公众号（异同体），但是比那里的内容更加完整和准确。</p>
 <p>如果你对我的记录感兴趣，可以联系我：<a href="mailto:&#x34;&#x31;&#49;&#51;&#x38;&#x31;&#x33;&#53;&#53;&#x40;&#x71;&#113;&#x2e;&#x63;&#x6f;&#x6d;">&#x34;&#x31;&#49;&#51;&#x38;&#x31;&#x33;&#53;&#53;&#x40;&#x71;&#113;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
 
-    </div>
-     
-    <div class="post-footer__meta"><p>updated at 2024-09-15</p></div> 
-    <div class="post-entry__tags"></div> 
-</article>
-
-
-
-
-
-
-</main>
-
-            <footer class="footer">
-    
-    
-
-
-    
-     
- 
-
- 
-    
-        
-        <p class="footer-copyright">
-            Copyright © 2024 <a href="/">飞飞哥&#39;s Blog</a>
-        </p>
-    
-    
-    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
-</footer>
+        </section>
+    </article>
+</div>
 
         </div>
-         
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 飞飞哥 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
 
- 
-
- 
-
- 
-
- 
-
-
-
- 
-
-
-
- 
-
-
-    
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
-
-
-    </body>
+    </div>
+</body>
 </html>

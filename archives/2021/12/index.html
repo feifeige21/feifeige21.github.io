@@ -1,251 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <meta name="author" content="飞飞哥">
+
+
+
+
+
+<title>Archives: 2021/12 | 飞飞哥&#39;s Blog</title>
+
+
+
+    <link rel="icon" href="/image/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
     
 
-    <!-- 渲染优化 -->
-    <meta name="renderer" content="webkit">
-    <meta name="force-rendering" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta name="HandheldFriendly" content="True" >
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!--icon-->
 
+    <!-- scripts list from _config.yml -->
     
+    <script src="/js/script.js"></script>
     
-    
-    
+    <script src="/js/tocbot.min.js"></script>
     
 
-
-    <!-- meta -->
-
-
-<title>Archive: 2021/12 | 飞飞哥&#39;s Blog</title>
-
-
-
-
-
-    <!-- OpenGraph -->
- 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="飞飞哥&#39;s Blog">
-<meta property="og:url" content="https://feifeige21.github.io/archives/2021/12/index.html">
-<meta property="og:site_name" content="飞飞哥&#39;s Blog">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="飞飞哥">
-<meta name="twitter:card" content="summary_large_image">
 
 
     
-<link rel="stylesheet" href="/css/style/main.css">
- 
-
     
-    
+        
     
 
-    
-
-     
-
-    <!-- custom head -->
 
 <meta name="generator" content="Hexo 5.4.0"></head>
-
-    <body>
-        <div id="app" tabindex="-1">
-            <header class="header">
-    <div class="header__left">
-        <a href="/" class="button">
-            <span class="logo__text">Demo</span>
-        </a>
-    </div>
-    <div class="header__right">
-        
-            <div class="navbar__menus">
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">飞飞哥&#39;s Blog</a></div>
+            <div class="menu navbar-right">
                 
-                    <a href="/" class="navbar-menu button">首页</a>
+                    <a class="menu-item" href="/archives">Archives</a>
                 
-                    <a href="/tags/" class="navbar-menu button">标签</a>
+                    <a class="menu-item" href="/tag">Tags</a>
                 
-                    <a href="/archives/" class="navbar-menu button">归档</a>
+                    <a class="menu-item" href="/about">About</a>
                 
-                    <a href="/friends/" class="navbar-menu button">友链</a>
-                
-                    <a href="/page/" class="navbar-menu button">Page</a>
-                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
             </div>
-        
-        
-        
-
-        
-        
-
-        
-            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
-            <div class="dropdown-menus" id="dropdown-menus">
-                
-                    <a href="/" class="dropdown-menu button">首页</a>
-                
-                    <a href="/tags/" class="dropdown-menu button">标签</a>
-                
-                    <a href="/archives/" class="dropdown-menu button">归档</a>
-                
-                    <a href="/friends/" class="dropdown-menu button">友链</a>
-                
-                    <a href="/page/" class="dropdown-menu button">Page</a>
-                
-            </div>
-        
-    </div>
-</header>
-
-
-    <div class="cover">
-        <div class="cover__logo">
-            
-                <h1>Demo</h1>
-            
         </div>
-        
-        
-            <div class="cover__intro">
-                <p>Hi, nice to meet you!</p>
- 
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">飞飞哥&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
             </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Archives</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="post-wrap archive">
+    
+    
         
+
+        
+            <h3>2021</h3>
+        
+
+        <article class="archive-item">
+            <a class="archive-item-link" href="/2021/12/06/Wangjingdeyueguang/">望京的月光</a>
+            <span class="archive-item-date">December 6, 2021</span>
+        </article>
+    
+        
+
+        
+
+        <article class="archive-item">
+            <a class="archive-item-link" href="/2021/12/04/calmness/">也许你的心中早已不再有波澜</a>
+            <span class="archive-item-date">December 4, 2021</span>
+        </article>
+    
+        
+
+        
+
+        <article class="archive-item">
+            <a class="archive-item-link" href="/2021/12/03/test02/">Niemand außer uns</a>
+            <span class="archive-item-date">December 3, 2021</span>
+        </article>
+    
+    
+</div>
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 飞飞哥 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
     </div>
-
-            
-<main class='main'>
-    
-		
-    <div class="post-list">
-        
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        望京的月光
-    </h2>
-    
-        <p>我仍然是一个心中会掀起波澜的小子，哪怕你的心中早已不再有波澜。<br>我仍然相信在爱中可以创造真理，哪怕爱已经彻底沦为一种程序，充满bug。但是，我们不是正好可以在爱的程序中寻找漏洞并修复漏洞吗？</p>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2021/12/" class="post-meta__date button">2021-12-06</a>
-    
- 
-</div>
-<div class="post-entry__tags"><a href="/tags/%E6%98%A5%E6%B1%9F%E8%8A%B1%E6%9C%88%E5%A4%9C/" class="post-tags__link button"># 春江花月夜</a></div> 
-<a href="/2021/12/06/Wangjingdeyueguang/" class="post-entry__link">望京的月光</a>
-                </div>
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        也许你的心中早已不再有波澜
-    </h2>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2021/12/" class="post-meta__date button">2021-12-04</a>
-    
- 
-</div>
-<div class="post-entry__tags"><a href="/tags/%E6%98%A5%E6%B1%9F%E8%8A%B1%E6%9C%88%E5%A4%9C/" class="post-tags__link button"># 春江花月夜</a></div> 
-<a href="/2021/12/04/calmness/" class="post-entry__link">也许你的心中早已不再有波澜</a>
-                </div>
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        Niemand außer uns
-    </h2>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2021/12/" class="post-meta__date button">2021-12-03</a>
-    
- 
-</div>
-<div class="post-entry__tags"><a href="/tags/test/" class="post-tags__link button"># test</a></div> 
-<a href="/2021/12/03/test02/" class="post-entry__link">Niemand außer uns</a>
-                </div>
-            
-        
-    </div>
-    
-
-
-	
-</main>
-
-            <footer class="footer">
-    
-    
-
-
-    
-     
- 
-
- 
-    
-        
-        <p class="footer-copyright">
-            Copyright © 2024 <a href="/">飞飞哥&#39;s Blog</a>
-        </p>
-    
-    
-    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
 </footer>
 
-        </div>
-         
-
- 
-
- 
-
- 
-
- 
-
-
-
- 
-
-
-
- 
-
-
-    
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
-
-
-    </body>
+    </div>
+</body>
 </html>
