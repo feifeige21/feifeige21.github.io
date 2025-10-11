@@ -1360,3 +1360,25 @@ header label {
 .post-content pre .javascript .function {
   color: #8959a8;
 }
+a[href^="mailto:"] i,
+a[href^="mailto:"] .icon,
+a[href^="mailto:"] ~ i,
+a[href^="mailto:"] ~ .icon {
+  display: none !important;
+}
+li:has(> a[href^="mailto:"]) i,
+li:has(> a[href^="mailto:"]) .icon {
+  display: none !important;
+}
+a[href^="mailto:"]::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.35em;
+  vertical-align: -0.15em;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+/* 纯 SVG，颜色跟随文字色 */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path d='M2.25 6.75A2.25 2.25 0 0 1 4.5 4.5h15a2.25 2.25 0 0 1 2.25 2.25v10.5A2.25 2.25 0 0 1 19.5 19.5h-15A2.25 2.25 0 0 1 2.25 17.25V6.75zm2.28-.75 7.22 5.4 7.47-5.4H4.53zm15.72 2.22-7.92 5.73a.75.75 0 0 1-.9 0L3.5 8.22v9.03c0 .414.336.75.75.75h15a.75.75 0 0 0 .75-.75V8.22z'/></svg>");
+}
