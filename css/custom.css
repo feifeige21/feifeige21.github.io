@@ -23,3 +23,29 @@ a[href^="mailto:"]::before {
 /* 纯 SVG，颜色跟随文字色 */
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path d='M2.25 6.75A2.25 2.25 0 0 1 4.5 4.5h15a2.25 2.25 0 0 1 2.25 2.25v10.5A2.25 2.25 0 0 1 19.5 19.5h-15A2.25 2.25 0 0 1 2.25 17.25V6.75zm2.28-.75 7.22 5.4 7.47-5.4H4.53zm15.72 2.22-7.92 5.73a.75.75 0 0 1-.9 0L3.5 8.22v9.03c0 .414.336.75.75.75h15a.75.75 0 0 0 .75-.75V8.22z'/></svg>");
 }
+/* 先别急着隐藏旧图标，等新图标显示后再视情况保留/删除 */
+li:has(> a[href^="mailto:"]) i,
+li:has(> a[href^="mailto:"]) .icon,
+a[href^="mailto:"] i,
+a[href^="mailto:"] .icon {
+  display: none !important;
+}
+/* 给链接本体留出放图标的空间 */
+a[href^="mailto:"] {
+  position: relative;
+  padding-left: 1.4em !important; /* 预留1个图标宽度 */
+  line-height: 1.2;
+}
+/* 用 ::before 画“信封”图标（不依赖字体/库，颜色跟随文字色） */
+a[href^="mailto:"]::before {
+  content: "" !important;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1em;
+  height: 1em;
+  transform: translateY(-50%);
+  background-color: currentColor; /* 使用当前文字颜色 */
+  -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M2.25 6.75A2.25 2.25 0 0 1 4.5 4.5h15a2.25 2.25 0 0 1 2.25 2.25v10.5A2.25 2.25 0 0 1 19.5 19.5h-15A2.25 2.25 0 0 1 2.25 17.25V6.75zm2.28-.75 7.22 5.4 7.47-5.4H4.53zm15.72 2.22-7.92 5.73a.75.75 0 0 1-.9 0L3.5 8.22v9.03c0 .414.336.75.75.75h15a.75.75 0 0 0 .75-.75V8.22z'/></svg>") no-repeat center/100% 100%;
+  mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M2.25 6.75A2.25 2.25 0 0 1 4.5 4.5h15a2.25 2.25 0 0 1 2.25 2.25v10.5A2.25 2.25 0 0 1 19.5 19.5h-15A2.25 2.25 0 0 1 2.25 17.25V6.75zm2.28-.75 7.22 5.4 7.47-5.4H4.53zm15.72 2.22-7.92 5.73a.75.75 0 0 1-.9 0L3.5 8.22v9.03c0 .414.336.75.75.75h15a.75.75 0 0 0 .75-.75V8.22z'/></svg>") no-repeat center/100% 100%;
+}
