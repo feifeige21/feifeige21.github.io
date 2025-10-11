@@ -1,10 +1,10 @@
-/* 让导航/菜单中的 mailto 链接显示信封图标（不依赖任何图标库） */
-a[href^="mailto:"] i,
-a[href^="mailto:"] .icon {
+/* 让导航/菜单中的 Link 链接显示信封图标（不依赖任何图标库） */
+a[href^="Link"] i,
+a[href^="Link"] .icon {
   display: none !important; /* 隐藏主题自带占位图标（如果有） */
 }
 
-a[href^="mailto:"]::before {
+a[href^="Link"]::before {
   content: "";
   display: inline-block;
   width: 1em;
