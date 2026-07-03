@@ -1669,6 +1669,27 @@ header label {
   margin-left: auto !important;
   margin-right: auto !important;
 }
+.post-nav {
+  border-bottom: none !important;
+}
+.post-nav {
+  border-top: none !important;
+  border-bottom: none !important;
+}
+.post-content hr,
+.post-wrap hr,
+article.post-wrap hr {
+  display: none !important;
+}
+.post-content {
+  border-bottom: none !important;
+}
+.post-wrap {
+  border-bottom: none !important;
+}
+.post-share {
+  border-top: none !important;
+}
 .gallery-page {
   max-width: 960px;
   margin: 40px auto;

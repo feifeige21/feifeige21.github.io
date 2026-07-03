@@ -313,3 +313,27 @@
   margin-left: auto !important;
   margin-right: auto !important;
 }
+/* remove divider line above share */
+.post-nav {
+  border-bottom: none !important;
+}
+.post-nav {
+  border-top: none !important;
+  border-bottom: none !important;
+}
+/* remove extra divider line before share */
+.post-content hr,
+.post-wrap hr,
+article.post-wrap hr {
+  display: none !important;
+}
+.post-content {
+  border-bottom: none !important;
+}
+.post-wrap {
+  border-bottom: none !important;
+}
+/* final override: remove share divider */
+.post-share {
+  border-top: none !important;
+}
