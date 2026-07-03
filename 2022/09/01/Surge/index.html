@@ -244,14 +244,13 @@
         <i class="iconfont icon-twitter"></i>
     </a>
 
-    <a class="share-btn share-icon-btn"
-       href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffeifeige.cn%2F2022%2F09%2F01%2FSurge%2F"
-       target="_blank"
-       rel="noopener noreferrer"
-       title="分享到 Facebook"
-       aria-label="分享到 Facebook">
+    <button class="share-btn share-icon-btn"
+            type="button"
+            onclick="shareToFacebookOrNative('https://feifeige.cn/2022/09/01/Surge/', '你永远让我心潮澎湃')"
+            title="分享到 Facebook"
+            aria-label="分享到 Facebook">
         <i class="iconfont icon-facebook"></i>
-    </a>
+    </button>
 </section>
 
         <div id="share-qrcode-mask" class="share-qrcode-mask" onclick="closeShareQRCode()">
@@ -281,6 +280,23 @@
         function closeShareQRCode() {
             var mask = document.getElementById('share-qrcode-mask');
             mask.style.display = 'none';
+        }
+
+        function shareToFacebookOrNative(url, title) {
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+            if (isMobile && navigator.share) {
+                navigator.share({
+                    title: title,
+                    url: url
+                }).catch(function(error) {
+                    console.log('Share cancelled or failed:', error);
+                });
+                return;
+            }
+
+            var fbUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url);
+            window.open(fbUrl, '_blank', 'noopener,noreferrer,width=640,height=520');
         }
         </script>
     </article>

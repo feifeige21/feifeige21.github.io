@@ -214,9 +214,9 @@
                 <span class="tag">
                     
                     
-                        <a href="/tags/%E5%8C%97%E4%BA%AC/"># 北京</a>
-                    
                         <a href="/tags/%E9%85%92%E5%90%A7/"># 酒吧</a>
+                    
+                        <a href="/tags/%E5%8C%97%E4%BA%AC/"># 北京</a>
                     
                         <a href="/tags/%E6%96%B9%E5%A4%A7%E5%90%8C/"># 方大同</a>
                     
@@ -266,14 +266,13 @@
         <i class="iconfont icon-twitter"></i>
     </a>
 
-    <a class="share-btn share-icon-btn"
-       href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffeifeige.cn%2F2025%2F05%2F31%2Fshidianbanbar%2F"
-       target="_blank"
-       rel="noopener noreferrer"
-       title="分享到 Facebook"
-       aria-label="分享到 Facebook">
+    <button class="share-btn share-icon-btn"
+            type="button"
+            onclick="shareToFacebookOrNative('https://feifeige.cn/2025/05/31/shidianbanbar/', '特别的人总是以特别的方式出现吗？')"
+            title="分享到 Facebook"
+            aria-label="分享到 Facebook">
         <i class="iconfont icon-facebook"></i>
-    </a>
+    </button>
 </section>
 
         <div id="share-qrcode-mask" class="share-qrcode-mask" onclick="closeShareQRCode()">
@@ -303,6 +302,23 @@
         function closeShareQRCode() {
             var mask = document.getElementById('share-qrcode-mask');
             mask.style.display = 'none';
+        }
+
+        function shareToFacebookOrNative(url, title) {
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+            if (isMobile && navigator.share) {
+                navigator.share({
+                    title: title,
+                    url: url
+                }).catch(function(error) {
+                    console.log('Share cancelled or failed:', error);
+                });
+                return;
+            }
+
+            var fbUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url);
+            window.open(fbUrl, '_blank', 'noopener,noreferrer,width=640,height=520');
         }
         </script>
     </article>
