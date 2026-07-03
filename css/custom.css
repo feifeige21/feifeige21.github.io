@@ -326,3 +326,28 @@
 .post-share-title {
   margin-right: 12px;
 }
+/* share icons: no circle border */
+.post-share .share-icon-btn {
+  width: auto !important;
+  height: auto !important;
+  margin: 0 16px !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  line-height: 1 !important;
+  box-shadow: none !important;
+}
+.post-share .share-icon-btn:hover {
+  border: none !important;
+  background: transparent !important;
+  transform: none !important;
+}
+.post-share .share-icon-btn .iconfont {
+  font-size: 28px !important;
+  line-height: 1 !important;
+  color: #222 !important;
+}
+.post-share .share-icon-btn:hover .iconfont {
+  color: #000 !important;
+}
