@@ -177,6 +177,69 @@
 <p>&emsp;&emsp;我希望我能够更加专注，更加勇敢，更加潇洒。</p>
 <p>&emsp;&emsp;每年的这一天并不特别，今年同样没有蜡烛，但还是要唱：“祝你开心，十年。”<br><br /><br>补记：<br>&emsp;&emsp;今日凌晨，我在朋友圈以图片形式发布了这篇短文。当我早晨醒来之后，我打算删掉这条朋友圈，但在我准备删掉之前，我收到了一条我最想看到的评论。短文省略的那句话，与此相关。</p>
 
+            
+            
+
+<div class="post-share">
+    <div class="post-share-title">Share</div>
+
+    <button class="share-btn" type="button" onclick="openShareQRCode('wechat')">
+        微信
+    </button>
+
+    <a class="share-btn"
+       href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Ffeifeige.cn%2F2024%2F09%2F18%2Fwishyouhappy%2F&title=%E2%80%9C%E7%A5%9D%E4%BD%A0%E5%BC%80%E5%BF%83%EF%BC%8C%E5%8D%81%E5%B9%B4%E2%80%9D%20-%20%E9%A3%9E%E9%A3%9E%E5%93%A5"
+       target="_blank"
+       rel="noopener noreferrer">
+        新浪微博
+    </a>
+
+    <a class="share-btn"
+       href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ffeifeige.cn%2F2024%2F09%2F18%2Fwishyouhappy%2F&text=%E2%80%9C%E7%A5%9D%E4%BD%A0%E5%BC%80%E5%BF%83%EF%BC%8C%E5%8D%81%E5%B9%B4%E2%80%9D%20-%20%E9%A3%9E%E9%A3%9E%E5%93%A5"
+       target="_blank"
+       rel="noopener noreferrer">
+        X
+    </a>
+
+    <a class="share-btn"
+       href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffeifeige.cn%2F2024%2F09%2F18%2Fwishyouhappy%2F"
+       target="_blank"
+       rel="noopener noreferrer">
+        Facebook
+    </a>
+</div>
+
+<div id="share-qrcode-mask" class="share-qrcode-mask" onclick="closeShareQRCode()">
+    <div class="share-qrcode-box" onclick="event.stopPropagation()">
+        <button class="share-qrcode-close" type="button" onclick="closeShareQRCode()">×</button>
+        <div id="share-qrcode-title" class="share-qrcode-title">微信扫码分享</div>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Ffeifeige.cn%2F2024%2F09%2F18%2Fwishyouhappy%2F" alt="微信分享二维码" class="share-qrcode-img">
+        <p id="share-qrcode-desc" class="share-qrcode-desc">
+            用微信扫描二维码，打开文章后点击右上角，选择“分享到朋友圈”或“转发给朋友”。
+        </p>
+        <p class="share-qrcode-link">https://feifeige.cn/2024/09/18/wishyouhappy/</p>
+    </div>
+</div>
+
+<script>
+function openShareQRCode(type) {
+    var mask = document.getElementById('share-qrcode-mask');
+    var title = document.getElementById('share-qrcode-title');
+    var desc = document.getElementById('share-qrcode-desc');
+
+    if (type === 'moments') {
+        title.innerText = '分享至微信';
+        desc.innerText = '用微信扫描二维码，打开文章后点击右上角，选择“分享到朋友圈”或“转发给朋友”。';
+    }
+
+    mask.style.display = 'flex';
+}
+
+function closeShareQRCode() {
+    var mask = document.getElementById('share-qrcode-mask');
+    mask.style.display = 'none';
+}
+</script>
         </div>
 
         

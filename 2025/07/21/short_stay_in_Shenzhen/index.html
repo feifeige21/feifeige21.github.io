@@ -180,6 +180,69 @@
 <p>&emsp;&emsp;</p>
 <div align="right">写于深圳回成都的高铁上</div>
 <div align="right">2025.7.21 17:37</div>
+            
+            
+
+<div class="post-share">
+    <div class="post-share-title">Share</div>
+
+    <button class="share-btn" type="button" onclick="openShareQRCode('wechat')">
+        微信
+    </button>
+
+    <a class="share-btn"
+       href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Ffeifeige.cn%2F2025%2F07%2F21%2Fshort_stay_in_Shenzhen%2F&title=%E6%B7%B1%E5%9C%B3%20Short%20Stay%20-%20%E9%A3%9E%E9%A3%9E%E5%93%A5"
+       target="_blank"
+       rel="noopener noreferrer">
+        新浪微博
+    </a>
+
+    <a class="share-btn"
+       href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ffeifeige.cn%2F2025%2F07%2F21%2Fshort_stay_in_Shenzhen%2F&text=%E6%B7%B1%E5%9C%B3%20Short%20Stay%20-%20%E9%A3%9E%E9%A3%9E%E5%93%A5"
+       target="_blank"
+       rel="noopener noreferrer">
+        X
+    </a>
+
+    <a class="share-btn"
+       href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffeifeige.cn%2F2025%2F07%2F21%2Fshort_stay_in_Shenzhen%2F"
+       target="_blank"
+       rel="noopener noreferrer">
+        Facebook
+    </a>
+</div>
+
+<div id="share-qrcode-mask" class="share-qrcode-mask" onclick="closeShareQRCode()">
+    <div class="share-qrcode-box" onclick="event.stopPropagation()">
+        <button class="share-qrcode-close" type="button" onclick="closeShareQRCode()">×</button>
+        <div id="share-qrcode-title" class="share-qrcode-title">微信扫码分享</div>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Ffeifeige.cn%2F2025%2F07%2F21%2Fshort_stay_in_Shenzhen%2F" alt="微信分享二维码" class="share-qrcode-img">
+        <p id="share-qrcode-desc" class="share-qrcode-desc">
+            用微信扫描二维码，打开文章后点击右上角，选择“分享到朋友圈”或“转发给朋友”。
+        </p>
+        <p class="share-qrcode-link">https://feifeige.cn/2025/07/21/short_stay_in_Shenzhen/</p>
+    </div>
+</div>
+
+<script>
+function openShareQRCode(type) {
+    var mask = document.getElementById('share-qrcode-mask');
+    var title = document.getElementById('share-qrcode-title');
+    var desc = document.getElementById('share-qrcode-desc');
+
+    if (type === 'moments') {
+        title.innerText = '分享至微信';
+        desc.innerText = '用微信扫描二维码，打开文章后点击右上角，选择“分享到朋友圈”或“转发给朋友”。';
+    }
+
+    mask.style.display = 'flex';
+}
+
+function closeShareQRCode() {
+    var mask = document.getElementById('share-qrcode-mask');
+    mask.style.display = 'none';
+}
+</script>
         </div>
 
         

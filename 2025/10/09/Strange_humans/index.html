@@ -169,6 +169,69 @@
         <div class="post-content">
             <p>&emsp;&emsp;豆瓣上一条广播说：<br><br /><br>&emsp;&emsp;认识的时候说，“与君初相识，犹如故人归”<br>&emsp;&emsp;分别的时候又说，“人生若只如初见”<br>&emsp;&emsp;你们人类真的好奇怪啊<br><br /><br>&emsp;&emsp;是啊，我们好奇怪</p>
 
+            
+            
+
+<div class="post-share">
+    <div class="post-share-title">Share</div>
+
+    <button class="share-btn" type="button" onclick="openShareQRCode('wechat')">
+        微信
+    </button>
+
+    <a class="share-btn"
+       href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Ffeifeige.cn%2F2025%2F10%2F09%2FStrange_humans%2F&title=%E5%A5%87%E6%80%AA%E7%9A%84%E4%BA%BA%E7%B1%BB%20-%20%E9%A3%9E%E9%A3%9E%E5%93%A5"
+       target="_blank"
+       rel="noopener noreferrer">
+        新浪微博
+    </a>
+
+    <a class="share-btn"
+       href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ffeifeige.cn%2F2025%2F10%2F09%2FStrange_humans%2F&text=%E5%A5%87%E6%80%AA%E7%9A%84%E4%BA%BA%E7%B1%BB%20-%20%E9%A3%9E%E9%A3%9E%E5%93%A5"
+       target="_blank"
+       rel="noopener noreferrer">
+        X
+    </a>
+
+    <a class="share-btn"
+       href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffeifeige.cn%2F2025%2F10%2F09%2FStrange_humans%2F"
+       target="_blank"
+       rel="noopener noreferrer">
+        Facebook
+    </a>
+</div>
+
+<div id="share-qrcode-mask" class="share-qrcode-mask" onclick="closeShareQRCode()">
+    <div class="share-qrcode-box" onclick="event.stopPropagation()">
+        <button class="share-qrcode-close" type="button" onclick="closeShareQRCode()">×</button>
+        <div id="share-qrcode-title" class="share-qrcode-title">微信扫码分享</div>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Ffeifeige.cn%2F2025%2F10%2F09%2FStrange_humans%2F" alt="微信分享二维码" class="share-qrcode-img">
+        <p id="share-qrcode-desc" class="share-qrcode-desc">
+            用微信扫描二维码，打开文章后点击右上角，选择“分享到朋友圈”或“转发给朋友”。
+        </p>
+        <p class="share-qrcode-link">https://feifeige.cn/2025/10/09/Strange_humans/</p>
+    </div>
+</div>
+
+<script>
+function openShareQRCode(type) {
+    var mask = document.getElementById('share-qrcode-mask');
+    var title = document.getElementById('share-qrcode-title');
+    var desc = document.getElementById('share-qrcode-desc');
+
+    if (type === 'moments') {
+        title.innerText = '分享至微信';
+        desc.innerText = '用微信扫描二维码，打开文章后点击右上角，选择“分享到朋友圈”或“转发给朋友”。';
+    }
+
+    mask.style.display = 'flex';
+}
+
+function closeShareQRCode() {
+    var mask = document.getElementById('share-qrcode-mask');
+    mask.style.display = 'none';
+}
+</script>
         </div>
 
         

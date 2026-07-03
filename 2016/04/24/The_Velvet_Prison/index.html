@@ -176,6 +176,69 @@
 <hr style="border: none; height: 1px; background-color: rgba(0,0,0,0.15);">
 * 版权归作者所有，任何形式转载、引用请注明出处。
 
+            
+            
+
+<div class="post-share">
+    <div class="post-share-title">Share</div>
+
+    <button class="share-btn" type="button" onclick="openShareQRCode('wechat')">
+        微信
+    </button>
+
+    <a class="share-btn"
+       href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Ffeifeige.cn%2F2016%2F04%2F24%2FThe_Velvet_Prison%2F&title=%E6%96%87%E5%8C%96%E5%8D%B3%E5%AE%A1%E6%9F%A5%E2%80%94%E2%80%94%E8%AF%BB%E3%80%8A%E5%A4%A9%E9%B9%85%E7%BB%92%E7%9B%91%E7%8B%B1%E3%80%8B%20-%20%E9%A3%9E%E9%A3%9E%E5%93%A5"
+       target="_blank"
+       rel="noopener noreferrer">
+        新浪微博
+    </a>
+
+    <a class="share-btn"
+       href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ffeifeige.cn%2F2016%2F04%2F24%2FThe_Velvet_Prison%2F&text=%E6%96%87%E5%8C%96%E5%8D%B3%E5%AE%A1%E6%9F%A5%E2%80%94%E2%80%94%E8%AF%BB%E3%80%8A%E5%A4%A9%E9%B9%85%E7%BB%92%E7%9B%91%E7%8B%B1%E3%80%8B%20-%20%E9%A3%9E%E9%A3%9E%E5%93%A5"
+       target="_blank"
+       rel="noopener noreferrer">
+        X
+    </a>
+
+    <a class="share-btn"
+       href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffeifeige.cn%2F2016%2F04%2F24%2FThe_Velvet_Prison%2F"
+       target="_blank"
+       rel="noopener noreferrer">
+        Facebook
+    </a>
+</div>
+
+<div id="share-qrcode-mask" class="share-qrcode-mask" onclick="closeShareQRCode()">
+    <div class="share-qrcode-box" onclick="event.stopPropagation()">
+        <button class="share-qrcode-close" type="button" onclick="closeShareQRCode()">×</button>
+        <div id="share-qrcode-title" class="share-qrcode-title">微信扫码分享</div>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Ffeifeige.cn%2F2016%2F04%2F24%2FThe_Velvet_Prison%2F" alt="微信分享二维码" class="share-qrcode-img">
+        <p id="share-qrcode-desc" class="share-qrcode-desc">
+            用微信扫描二维码，打开文章后点击右上角，选择“分享到朋友圈”或“转发给朋友”。
+        </p>
+        <p class="share-qrcode-link">https://feifeige.cn/2016/04/24/The_Velvet_Prison/</p>
+    </div>
+</div>
+
+<script>
+function openShareQRCode(type) {
+    var mask = document.getElementById('share-qrcode-mask');
+    var title = document.getElementById('share-qrcode-title');
+    var desc = document.getElementById('share-qrcode-desc');
+
+    if (type === 'moments') {
+        title.innerText = '分享至微信';
+        desc.innerText = '用微信扫描二维码，打开文章后点击右上角，选择“分享到朋友圈”或“转发给朋友”。';
+    }
+
+    mask.style.display = 'flex';
+}
+
+function closeShareQRCode() {
+    var mask = document.getElementById('share-qrcode-mask');
+    mask.style.display = 'none';
+}
+</script>
         </div>
 
         
