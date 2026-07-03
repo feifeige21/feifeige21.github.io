@@ -223,34 +223,40 @@
 
         
 
-        <section class="post-share">
-            <div class="post-share-title">分享至</div>
+<section class="post-share">
+    <div class="post-share-title">分享至</div>
 
-            <button class="share-btn" type="button" onclick="openShareQRCode('wechat')">
-                微信
-            </button>
+    <button class="share-btn share-icon-btn" type="button" onclick="openShareQRCode('wechat')" title="分享到微信" aria-label="分享到微信">
+        <i class="iconfont icon-wechat"></i>
+    </button>
 
-            <a class="share-btn"
-               href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Ffeifeige.cn%2F2013%2F09%2F19%2FThinking%2F&title=%E6%83%B3%20-%20%E9%A3%9E%E9%A3%9E%E5%93%A5"
-               target="_blank"
-               rel="noopener noreferrer">
-                新浪微博
-            </a>
+    <a class="share-btn share-icon-btn"
+       href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Ffeifeige.cn%2F2013%2F09%2F19%2FThinking%2F&title=%E6%83%B3%20-%20%E9%A3%9E%E9%A3%9E%E5%93%A5"
+       target="_blank"
+       rel="noopener noreferrer"
+       title="分享到新浪微博"
+       aria-label="分享到新浪微博">
+        <i class="iconfont icon-weibo"></i>
+    </a>
 
-            <a class="share-btn"
-               href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ffeifeige.cn%2F2013%2F09%2F19%2FThinking%2F&text=%E6%83%B3%20-%20%E9%A3%9E%E9%A3%9E%E5%93%A5"
-               target="_blank"
-               rel="noopener noreferrer">
-                X
-            </a>
+    <a class="share-btn share-icon-btn"
+       href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ffeifeige.cn%2F2013%2F09%2F19%2FThinking%2F&text=%E6%83%B3%20-%20%E9%A3%9E%E9%A3%9E%E5%93%A5"
+       target="_blank"
+       rel="noopener noreferrer"
+       title="分享到 Twitter / X"
+       aria-label="分享到 Twitter / X">
+        <i class="iconfont icon-twitter"></i>
+    </a>
 
-            <a class="share-btn"
-               href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffeifeige.cn%2F2013%2F09%2F19%2FThinking%2F"
-               target="_blank"
-               rel="noopener noreferrer">
-                Facebook
-            </a>
-        </section>
+    <a class="share-btn share-icon-btn"
+       href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffeifeige.cn%2F2013%2F09%2F19%2FThinking%2F"
+       target="_blank"
+       rel="noopener noreferrer"
+       title="分享到 Facebook"
+       aria-label="分享到 Facebook">
+        <i class="iconfont icon-facebook"></i>
+    </a>
+</section>
 
         <div id="share-qrcode-mask" class="share-qrcode-mask" onclick="closeShareQRCode()">
             <div class="share-qrcode-box" onclick="event.stopPropagation()">

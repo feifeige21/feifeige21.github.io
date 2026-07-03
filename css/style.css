@@ -1363,7 +1363,6 @@ header label {
 .post-share {
   margin: 60px 0 20px;
   padding-top: 24px;
-  border-top: 1px solid rgba(0,0,0,0.08);
   text-align: center;
 }
 .post-share-title {
@@ -1457,7 +1456,6 @@ header label {
 .post-share {
   margin: 60px 0 20px;
   padding-top: 24px;
-  border-top: 1px solid rgba(0,0,0,0.08);
   text-align: center;
 }
 .post-share-title {
@@ -1552,7 +1550,6 @@ header label {
   max-width: 760px;
   margin: 28px auto 34px;
   padding: 18px 0 0;
-  border-top: 1px solid rgba(0,0,0,0.08);
   text-align: center;
 }
 .post-share-title {
@@ -1669,26 +1666,20 @@ header label {
   margin-left: auto !important;
   margin-right: auto !important;
 }
-.post-nav {
-  border-bottom: none !important;
+.share-icon-btn {
+  width: 38px;
+  height: 38px;
+  padding: 0 !important;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 38px;
 }
-.post-nav {
-  border-top: none !important;
-  border-bottom: none !important;
+.share-icon-btn .iconfont {
+  font-size: 18px;
+  line-height: 38px;
 }
-.post-content hr,
-.post-wrap hr,
-article.post-wrap hr {
-  display: none !important;
-}
-.post-content {
-  border-bottom: none !important;
-}
-.post-wrap {
-  border-bottom: none !important;
-}
-.post-share {
-  border-top: none !important;
+.post-share-title {
+  margin-right: 12px;
 }
 .gallery-page {
   max-width: 960px;
